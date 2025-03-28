@@ -6,13 +6,13 @@
 
 body {
   margin: 0 auto;
-  max-width: 860px;
+  max-width: 960px;
   max-height: 678px;
   font-family: "Raleway", sans-serif;
-  
 }
 
 header {
+  border: 5px solid #388e3c;
   height: 5em;
   margin: 20px 20px 0;
 }
@@ -21,19 +21,20 @@ header {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid gray;
-  padding: 10px 20px;
+  padding: 5px 20px;
 }
 
 .menu .login {
   display: flex;
   gap: 20px;
   list-style: none;
+  gap: 20px;
 }
 
 .menu a, .login a {
   text-decoration: none;
   color: gray;
-  font-size: 0.9rem;
+  font-size: 0.1em;
 }
 
 .menu li, .login li {
@@ -51,6 +52,7 @@ main {
 }
 
 .left {
+  border: 5px solid #388e3c;
   flex: 1;
   width: 460px;
   height: 30em;
@@ -68,13 +70,15 @@ main {
 }
 
 .right {
+  border: 5px solid #388e3c;
   flex: 1;
   margin: 20px 0;
 }
 
 footer {
+  border: 5px solid #388e3c;
   height: 5em;
-  margin: 20px 20px;
+  margin: 0 20px;
   height: 60px;
   text-align: center;
 }
@@ -90,12 +94,12 @@ footer {
   display: block;
   border-top: 3px solid lightgrey;
   border-bottom: 3px solid lightgrey;
-  
+  margin: 0 20px;
   padding: 15px 0;
 }
 
 p {
-  margin-bottom: 15px;
+  margin-left: 20px;
 }
 
 .order-table {
@@ -111,7 +115,8 @@ p {
 }
 
 .order-table th {
-  font-weight: normal;
+  
+  font-weight: bold;
 }
 
 .order-table td select {
@@ -124,19 +129,8 @@ p {
 }
 
 .order-table tbody tr:last-child td {
-  border-bottom: none;  
+  border-bottom: none;
 }
-
-.order-table th:first-child,
-.order-table td:first-child,
-.order-table th:last-child,
-.order-table td:last-child {
-  border-left: none;
-  border-right: none;
-}
-
-
-
 
 .cart-btn {
   text-decoration: none;
@@ -144,12 +138,13 @@ p {
   color: white;
   display: block;
   text-align: center;
-  
+  width: 100%;
+  height: auto;
   padding: 10px;
-  margin-top: 20px;
 }
 
-.size-table th {
+th {
+  
   background-color: lightgrey;
 }
 
@@ -166,46 +161,4 @@ p {
 td {
   text-align: center;
 }
-
-.size-table th {
-  font-weight: normal;
-}
-
-@media (max-width: 896px) { 
-  .wraps {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-  .menu, .login {
-    display: flex;
-    width: 100%;
-  }
-  .menu ul, .login ul {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto; 
-    white-space: nowrap; 
-    padding-left: 0;
-  }
-  .menu li, .login li {
-    margin-right: 20px; 
-  }
-  .menu a, .login a {
-   display: block; 
-  }
- .wraps {
-    flex-direction: column;
-  }
-  .wrapper {
-    flex-direction: column;
-  }
-  .left, .right {
-    width: 100%;
-    margin: 0;
-  }
-}
-
-
 
