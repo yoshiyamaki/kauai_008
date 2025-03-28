@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #24292e;
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 14px;
+  }
+
+  #header {
+    max-width: 960px;
+    margin: 0 auto;
+    border: 3px solid greenyellow;
+    
+  }
+
+  #header ul{
+    list-style: none;
+    text-decoration: none;
+  }
+
+  #header a {
+    list-style: none;
+    text-decoration: none;
+  }
+
+  .site-title {
+    padding: 0 4%;
+    margin: 0 auto;
+    max-width: 960px;
+    border: 3px solid greenyellow;
+    text-align: left;
+  }
+
+ 
+
+#mainvisual { 
+    position: relative;
+    width: 67%;
+    white-space: normal;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center; 
+    margin: 0;
+   
+ }
+
+  /* #house-picture {
+    position: absolute; 
+    
+    height: 420px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center; 
+    text-align: left;
+    margin: 0;
+   
+ }*/
+
+ 
+   
+#house-picture {
+    width: 100%;
+    height: auto;
+}
+    
+
+
+  
+
+  .wrapper {
+    padding: 0 4%;
+    margin: 0 auto 13px auto;
+    max-width: 960px;
+    border: 3px solid greenyellow;
+  }
+
+  .sec-title {
+    text-align: center;
+  }
+
+  #works ul {
+  list-style: none; 
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 5px;
+  }
+
+  #works li {
+  width: 30%;
+  }
+
+  #works ul {
+    list-style: none; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 5px;
+    padding: 0;
+  }
+  
+  #works li {
+    width: calc(33.333% - 10px); /* 3つ並べるために幅を指定 */
+    box-sizing: border-box; /* パディングやボーダーのサイズを含める */
+  }
+  
+  #works img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+
+ 
+
+  footer {
+    padding: 0 4%;
+    margin: 0 auto 13px auto;
+    max-width: 960px;
+    border: 3px solid greenyellow;
+    text-align: center;
+  }
+
